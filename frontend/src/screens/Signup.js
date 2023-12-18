@@ -82,7 +82,7 @@ function Signup() {
       <form action="" method="post" id="form" onSubmit={handleSubmit} >
         <div id="form-body">
           <div id="welcome-lines">
-            <div id="welcome-line-1">Tiffin <img src={logo} /></div>
+            <div id="welcome-line-1">Tiffin <img src={logo} alt="Logo" /></div>
             <div id="welcome-line-2">Welcome,
               <div>
                 <Link to="/login" className='log' >

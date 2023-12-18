@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Home from './screens/Home';
 import {
@@ -14,21 +14,19 @@ import Signup from './screens/Signup';
 import { CartProvider } from './components/ContextReducer';
 import MyOrder from './screens/MyOrder.js';
 
-
 function App() {
   return (
     <CartProvider>
-
-    <Router>
-    <div> 
-        <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route exact path="/login" element={<Login/>} />
-          <Route exact path="/createuser" element={<Signup/>} />
-          <Route exact path="/myOrder" element={<MyOrder/>} />
-        </Routes>
-    </div>
-    </Router>  
+      <Router>
+        <div>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/createuser" element={<Signup />} />
+            <Route exact path="/myOrder" element={<MyOrder />} />
+          </Routes>
+        </div>
+      </Router>
     </CartProvider>
   );
 }

@@ -59,19 +59,6 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      const response = await fetch('http://localhost:5000/api/createuser', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: credentials.name,
-          email: credentials.email,
-          password: credentials.password,
-          location: credentials.geolocation,
-        }),
-
-      });
       navigate('/login');
     }
   };

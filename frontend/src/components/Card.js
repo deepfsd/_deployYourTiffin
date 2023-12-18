@@ -36,7 +36,7 @@ function Card(props) {
     <div>
       <div className="card">
         <div className="card-img">
-          <img src={props.foodItem.img} alt="Card image cap" />
+          <img src={props.foodItem.img} />
         </div>
         <p className="text-title">{props.foodItem.name} </p>
         <div className="card-info">

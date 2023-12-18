@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       <div className='container'>
         {
-          food_category != []
+          food_category !== []
             ? food_category.map((data) => {
               return (
                 <div className='row mb-3'>
@@ -69,7 +69,7 @@ export default function Home() {
                     {data.CategoryName}
                   </div>
                   <hr />
-                  {food_items != []? food_items.filter((item)=>
+                  {food_items !== []? food_items.filter((item)=>
                     (item.CategoryName === data.CategoryName) && (item.name.toLowerCase().includes(search.toLowerCase()))).map(filterItems =>{
                       return(
                         <div key={filterItems._id} className='col-12 col-md-6 col-lg-3'>
